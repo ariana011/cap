@@ -1,16 +1,57 @@
-# React + Vite
+🌐 Website Screenshot Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive website screenshot generator built with React and the APIFlash
+ API.
+Users can input a website URL and customize attributes such as width, height, format, and whether to hide ads or cookie banners. The app then fetches and displays the generated screenshot — plus keeps a gallery of previous screenshots.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+✅ Generate screenshots from any website URL
+✅ Customize image format (jpeg, png, webp)
+✅ Hide ads and cookie banners from screenshots
+✅ Choose screenshot width and height (in pixels)
+✅ View your current query string in real time
+✅ Keep a gallery of all screenshots taken during the session
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧠 How It Works
 
-## Expanding the ESLint configuration
+Enter a website URL (without https://) and your desired image attributes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Click “Take that Pic! 🎞”
+
+The app sends your inputs to the APIFlash Screenshot API.
+
+A generated screenshot appears on the screen and is added to your gallery.
+
+⚙️ Technologies Used
+
+React.js – UI and component management
+
+JavaScript (ES6+) – Core logic and API calls
+
+APIFlash API – Generates the screenshots
+
+CSS – Styling and layout
+
+Documents/
+└── cap/
+    ├── src/
+    │   ├── App.jsx            # Main logic + API call
+    │   ├── components/
+    │   │   ├── APIForm.jsx    # User form for inputs
+    │   │   └── Gallery.jsx    # Screenshot gallery
+    │   ├── index.css          # Global styles
+    │   └── index.js           # Entry point
+    ├── package.json
+    └── README.md              # You are here 👋
+
+👩🏽‍💻 About Me
+
+Hi! I’m Ariana Garcia 👋
+I’m a Cyber Security major who loves building creative projects and learning new tech things — this is one of them!
+
+🪄 Extra Notes
+
+This project was made for fun and learning purposes.
+You can edit, remix, or build on it however you want!
